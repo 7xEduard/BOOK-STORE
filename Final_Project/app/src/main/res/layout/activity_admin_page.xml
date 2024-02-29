@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Admin_Page">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginBottom="100dp"
+        android:orientation="vertical"
+        android:weightSum="3"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_horizontal|center_vertical"
+            android:layout_marginBottom="5dp"
+            android:layout_weight="1"
+            android:gravity="center_horizontal|center_vertical"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <LinearLayout
+                android:id="@+id/addd_btn"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:layout_marginRight="5dp"
+                android:layout_weight="1"
+                android:background="#34FFFFFF"
+                android:gravity="center_horizontal|center_vertical"
+                android:orientation="vertical"
+                android:padding="20dp"
+                android:weightSum="1">
+
+                <ImageView
+                    android:id="@+id/imageView6"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:layout_weight=".75"
+                    app:srcCompat="@drawable/add_icon" />
+
+                <TextView
+                    android:id="@+id/textView16"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:layout_weight=".25"
+                    android:gravity="center_horizontal|center_vertical"
+                    android:text="Add Book"
+                    android:textAlignment="center"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/delete_btn"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="1"
+                android:background="#34FFFFFF"
+                android:gravity="center_horizontal|center_vertical"
+                android:orientation="vertical"
+                android:padding="20dp"
+                android:weightSum="1">
+
+                <ImageView
+                    android:id="@+id/imageView61"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:layout_weight=".75"
+                    app:srcCompat="@drawable/delete_forever" />
+
+                <TextView
+                    android:id="@+id/textView126"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:layout_weight=".25"
+                    android:gravity="center_horizontal|center_vertical"
+                    android:text="Delete"
+                    android:textAlignment="center"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_horizontal|center_vertical"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_weight="1"
+            android:gravity="center_horizontal|center_vertical"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <LinearLayout
+                android:id="@+id/edit_btn"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:layout_marginRight="5dp"
+                android:layout_weight="1"
+                android:background="#34FFFFFF"
+                android:gravity="center_horizontal|center_vertical"
+                android:orientation="vertical"
+                android:padding="20dp"
+                android:weightSum="1">
+
+                <ImageView
+                    android:id="@+id/imageView46"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:layout_weight=".75"
+                    app:srcCompat="@drawable/edit_icon" />
+
+                <TextView
+                    android:id="@+id/textView146"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:layout_weight=".25"
+                    android:gravity="center_horizontal|center_vertical"
+                    android:text="Edit Book"
+                    android:textAlignment="center"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/order_btn"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="1"
+                android:background="#34FFFFFF"
+                android:gravity="center_horizontal|center_vertical"
+                android:orientation="vertical"
+                android:padding="20dp"
+                android:weightSum="1">
+
+                <ImageView
+                    android:id="@+id/imageView651"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:layout_weight=".75"
+                    app:srcCompat="@drawable/shopping_bag" />
+
+                <TextView
+                    android:id="@+id/textView1236"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:layout_weight=".25"
+                    android:gravity="center_horizontal|center_vertical"
+                    android:text="Orders"
+                    android:textAlignment="center"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_horizontal|center_vertical"
+            android:layout_marginTop="5dp"
+            android:layout_weight="1"
+            android:gravity="center_horizontal|center_vertical"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <LinearLayout
+                android:id="@+id/reviewww_btn"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:layout_marginRight="5dp"
+                android:layout_weight="1"
+                android:background="#34FFFFFF"
+                android:gravity="center_horizontal|center_vertical"
+                android:orientation="vertical"
+                android:padding="20dp"
+                android:weightSum="1">
+
+                <ImageView
+                    android:id="@+id/imageView4876"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:layout_weight=".75"
+                    app:srcCompat="@drawable/reviews" />
+
+                <TextView
+                    android:id="@+id/textView146696"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:layout_weight=".25"
+                    android:gravity="center_horizontal|center_vertical"
+                    android:text="Reviews"
+                    android:textAlignment="center"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/stat_btn"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="1"
+                android:background="#34FFFFFF"
+                android:gravity="center_horizontal|center_vertical"
+                android:orientation="vertical"
+                android:padding="20dp"
+                android:weightSum="1">
+
+                <ImageView
+                    android:id="@+id/imageView65211"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:layout_weight=".75"
+                    app:srcCompat="@drawable/chart" />
+
+                <TextView
+                    android:id="@+id/textView121636"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:layout_weight=".25"
+                    android:gravity="center_horizontal|center_vertical"
+                    android:text="Analysis"
+                    android:textAlignment="center"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

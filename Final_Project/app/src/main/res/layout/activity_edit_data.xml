@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Edit_data">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="50dp"
+            android:weightSum="4">
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:layout_marginTop="25dp"
+                android:layout_weight=".5"
+                android:gravity="center_horizontal|center_vertical"
+                android:text="EDIT"
+                android:textAlignment="center"
+                android:textAllCaps="true"
+                android:textSize="50sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/edit_page_mail"
+                android:layout_width="match_parent"
+                android:layout_height="75dp"
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:layout_marginTop="10dp"
+                android:layout_weight=".5"
+                android:drawableLeft="@drawable/mail"
+                android:ems="10"
+                android:gravity="center_horizontal|center_vertical"
+                android:hint="   E - MAIL"
+                android:inputType="textEmailAddress"
+                android:textAlignment="textStart" />
+
+            <EditText
+                android:id="@+id/edit_page_userName"
+                android:layout_width="match_parent"
+                android:layout_height="75dp"
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:layout_marginTop="10dp"
+                android:layout_weight=".5"
+                android:drawableLeft="@drawable/username"
+                android:ems="10"
+                android:gravity="center_horizontal|center_vertical"
+                android:hint="   USERNAME"
+                android:inputType="textEmailAddress"
+                android:textAlignment="textStart" />
+
+            <EditText
+                android:id="@+id/edit_page_birthdate"
+                android:layout_width="match_parent"
+                android:layout_height="75dp"
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:layout_marginTop="10dp"
+                android:layout_weight=".5"
+                android:drawableLeft="@drawable/date"
+                android:ems="10"
+                android:gravity="center_horizontal|center_vertical"
+                android:hint="   BIRTH DATE"
+                android:inputType="date"
+                android:textAlignment="textStart" />
+
+            <EditText
+                android:id="@+id/edit_page_address"
+                android:layout_width="match_parent"
+                android:layout_height="75dp"
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:layout_marginTop="10dp"
+                android:layout_weight=".5"
+                android:drawableLeft="@drawable/location"
+                android:ems="10"
+                android:gravity="center_horizontal|center_vertical"
+                android:hint="   ADDRESS"
+                android:inputType="textEmailAddress"
+                android:textAlignment="textStart" />
+
+            <EditText
+                android:id="@+id/edit_page_phone"
+                android:layout_width="match_parent"
+                android:layout_height="75dp"
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:layout_marginTop="10dp"
+                android:layout_weight=".5"
+                android:drawableLeft="@drawable/phone"
+                android:ems="10"
+                android:gravity="center_horizontal|center_vertical"
+                android:hint="   PHONE"
+                android:inputType="phone"
+                android:textAlignment="textStart" />
+
+            <EditText
+                android:id="@+id/edit_page_pass1"
+                android:layout_width="match_parent"
+                android:layout_height="75dp"
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:layout_marginTop="10dp"
+                android:layout_weight=".5"
+                android:drawableLeft="@drawable/lock"
+                android:ems="10"
+                android:gravity="center_horizontal|center_vertical"
+                android:hint="   PASSWORD"
+                android:inputType="textPassword"
+                android:textAlignment="textStart" />
+
+            <EditText
+                android:id="@+id/edit_page_pass2"
+                android:layout_width="match_parent"
+                android:layout_height="75dp"
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:layout_marginTop="10dp"
+                android:layout_weight=".5"
+                android:drawableLeft="@drawable/lock"
+                android:ems="10"
+                android:gravity="center_horizontal|center_vertical"
+                android:hint="   CONFIRM PASSWORD"
+                android:inputType="textPassword"
+                android:textAlignment="textStart" />
+            <TextView
+                android:id="@+id/textView18828"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_weight=".5"
+                android:text="SECURITY QUESTION :"
+                android:textAlignment="viewStart"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <Spinner
+                android:id="@+id/edit_page_spinner"
+                android:layout_width="match_parent"
+                android:layout_height="65dp"
+                android:layout_marginTop="10dp"
+                android:layout_weight=".5"
+                android:entries="@array/secList" />
+
+            <EditText
+                android:id="@+id/edit_page_answer"
+                android:layout_width="match_parent"
+                android:layout_height="75dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="25dp"
+                android:layout_weight=".5"
+                android:drawableLeft="@drawable/question_answer"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:text="   YOUR ANSWER." />
+
+            <Button
+                android:id="@+id/edit_page_btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:layout_marginBottom=".25dp"
+                android:layout_weight=".5"
+                android:gravity="center_horizontal|center_vertical"
+                android:text="SAVE"
+                android:textSize="30sp" />
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

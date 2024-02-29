@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Admin_Book_Review">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="25dp"
+        android:weightSum="1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ListView
+            android:id="@+id/book_review_details"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight=".75"
+            android:padding="20dp" />
+
+        <RatingBar
+            android:id="@+id/avRate_review"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal|center_vertical"
+            android:layout_weight=".25"
+            android:contentDescription="rate"
+            android:isIndicator="true"
+            android:numStars="5"
+            android:progressTint="@color/amber"
+            android:rating="0"
+            android:stepSize="1" />
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
